@@ -1,9 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
 const connectDB = require('./config/db');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
 
 const { connect } = require('http2');
 
@@ -12,15 +9,9 @@ var app = express();
 // Connect Database
 connectDB();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+// Init Middleware
+app.use(express.json({ extended: false }));
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Define Routes
 app.use('/api/users', require('./routes/api/users'));
