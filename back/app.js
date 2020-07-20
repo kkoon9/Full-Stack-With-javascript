@@ -1,10 +1,7 @@
-var createError = require('http-errors');
-var express = require('express');
+const createError = require('http-errors');
+const express = require('express');
 const connectDB = require('./config/db');
-
-const { connect } = require('http2');
-
-var app = express();
+const app = express();
 
 // Connect Database
 connectDB();
