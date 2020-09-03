@@ -52,7 +52,7 @@ const Multiplication = () => {
         다음문제
       </button>
       <Link to="/Game" className="btn btn-light">
-        이전으로
+        다른 게임하기
       </Link>
     </Fragment >
   );
