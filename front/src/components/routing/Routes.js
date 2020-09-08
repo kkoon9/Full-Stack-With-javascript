@@ -16,6 +16,8 @@ import Posts from '../posts/Posts';
 import Post from '../post/Post';
 import Game from '../game/Game';
 import Multiplication from '../game/Multiplication';
+import WordReply from '../game/WordReply';
+import NumberBaseball from '../game/NumberBaseball';
 import NotFound from '../layout/NotFound';
 
 const Routes = () => {
@@ -29,6 +31,8 @@ const Routes = () => {
         <Route exact path="/profile/:id" component={Profile} />
         <Route exact path="/game" component={Game} />
         <Route exact path="/Multiplication" component={Multiplication} />
+        <Route exact path="/WordReply" component={WordReply} />
+        <Route exact path="/NumberBaseball" component={NumberBaseball} />
 
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/create-profile" component={CreateProfile} />
