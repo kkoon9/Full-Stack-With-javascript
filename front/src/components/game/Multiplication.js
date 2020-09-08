@@ -38,10 +38,10 @@ const Multiplication = () => {
         <button>입력!</button>
       </form>
       <div>{result}</div>
-      <button className="btn btn-light" onClick={(e) => onClick(e)}>
+      <button className="btn btn-dark my-1" onClick={(e) => onClick(e)}>
         다음문제
       </button>
-      <Link to="/Game" className="btn btn-light">
+      <Link to="/Game" className="btn btn-dark my-1">
         다른 게임하기
       </Link>
     </Fragment >
