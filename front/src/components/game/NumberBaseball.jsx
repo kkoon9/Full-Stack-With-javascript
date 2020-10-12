@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useRef } from 'react';
+import React, { Fragment, useState, useRef, memo } from 'react';
 import { Link } from 'react-router-dom';
 import TRY from './Try';
 const getNumbers = () => {
@@ -10,8 +10,7 @@ const getNumbers = () => {
   }
   return array;
 };
-
-const NumberBaseball = () => {
+const NumberBaseball = memo(() => {
   const [answer, setAnswer] = useState(getNumbers());
   const [value, setValue] = useState('');
   const [result, setResult] = useState('');
@@ -90,6 +89,6 @@ const NumberBaseball = () => {
       </Link>
     </Fragment>
   );
-};
+});
 
 export default NumberBaseball;
