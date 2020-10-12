@@ -20,6 +20,11 @@ const Game = () => {
           숫자야구
       </Link>
       </div>
+      <div>
+        <Link to="/ResponseCheck" className="btn btn-dark my-1">
+          반응속도
+      </Link>
+      </div>
     </Fragment>
   );
 };

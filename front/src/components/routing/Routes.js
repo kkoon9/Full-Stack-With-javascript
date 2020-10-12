@@ -18,6 +18,7 @@ import Game from '../game/Game';
 import Multiplication from '../game/Multiplication';
 import WordReply from '../game/WordReply';
 import NumberBaseball from '../game/NumberBaseball';
+import ResponseCheck from '../game/ResponseCheck';
 import NotFound from '../layout/NotFound';
 
 const Routes = () => {
@@ -32,6 +33,7 @@ const Routes = () => {
         <Route exact path="/game" component={Game} />
         <Route exact path="/Multiplication" component={Multiplication} />
         <Route exact path="/WordReply" component={WordReply} />
+        <Route exact path="/ResponseCheck" component={ResponseCheck} />
         <Route exact path="/NumberBaseball" component={NumberBaseball} />
 
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
