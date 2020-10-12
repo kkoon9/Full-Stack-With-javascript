@@ -547,3 +547,18 @@ img {
     padding: 0.3rem 0.4rem;
   }
 }
+#screen {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+#screen.waiting {
+  background-color: aqua;
+}
+#screen.ready {
+  background-color: red;
+  color: white;
+}
+#screen.now {
+  background-color: greenyellow;
+}
