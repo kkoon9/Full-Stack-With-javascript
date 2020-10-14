@@ -562,3 +562,8 @@ img {
 #screen.now {
   background-color: greenyellow;
 }
+#computer {
+  width: 142px;
+  height: 200px;
+  background-position: 0 0;
+}

@@ -25,6 +25,11 @@ const Game = () => {
           반응속도
       </Link>
       </div>
+      <div>
+        <Link to="/RSP" className="btn btn-dark my-1">
+          가위바위보
+      </Link>
+      </div>
     </Fragment>
   );
 };
