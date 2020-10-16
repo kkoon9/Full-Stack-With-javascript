@@ -20,6 +20,7 @@ import WordReply from '../game/WordReply';
 import NumberBaseball from '../game/NumberBaseball';
 import ResponseCheck from '../game/ResponseCheck';
 import RSP from '../game/RSP';
+import Lotto from '../game/Lotto';
 import NotFound from '../layout/NotFound';
 
 const Routes = () => {
@@ -35,6 +36,7 @@ const Routes = () => {
         <Route exact path="/Multiplication" component={Multiplication} />
         <Route exact path="/WordReply" component={WordReply} />
         <Route exact path="/RSP" component={RSP} />
+        <Route exact path="/Lotto" component={Lotto} />
         <Route exact path="/NumberBaseball" component={NumberBaseball} />
         <Route exact path="/ResponseCheck" component={ResponseCheck} />
 
