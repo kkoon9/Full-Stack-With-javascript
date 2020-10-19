@@ -35,6 +35,11 @@ const Game = () => {
           로또 추첨기
       </Link>
       </div>
+      <div>
+        <Link to="/MineSearch" className="btn btn-dark my-1">
+          지뢰찾기
+      </Link>
+      </div>
     </Fragment>
   );
 };
