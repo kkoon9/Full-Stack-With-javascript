@@ -79,7 +79,7 @@ export const addPost = (formData) => async (dispatch) => {
   };
 
   try {
-    const res = await axios.post('/api/posts/', formData, config);
+    const res = await axios.post('/api/posts', formData, config);
     dispatch({
       type: ADD_POST,
       payload: res.data,
@@ -121,7 +121,7 @@ export const addComment = (postId, formData) => async (dispatch) => {
     const res = await axios.post(
       `/api/posts/comment/${postId}`,
       formData,
-      config
+      config,
     );
     dispatch({
       type: ADD_COMMENT,
